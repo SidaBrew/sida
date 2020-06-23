@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /licauth/v1
+  tomcat:
+    max-threads: 8000
+    max-connections: 10000
+    accept-count: 2000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.100.202:59001/eureka/
+#    register-with-eureka: true
+
+#sql日志打印
+logging:
+  level:
+    com:
+      redshield:
+        licence:
+          liceic:
+            debug
+pki-config:
+  dllName: libph_sdf.so
+  pkiKeyLable: 10
+  pkiKeyPasswd: 1234567a
+  pkiKeyAlgo: 131328
+  pkiHashAlgo: 1
+liceic:
+  typeCode: QYM1
+  version: 1

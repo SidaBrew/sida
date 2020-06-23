@@ -1,0 +1,25 @@
+#server:
+#  port: 8090
+#  servlet:
+#    context-path: /licmgr
+#  tomcat:
+#    max-threads: 8000
+#    max-connections: 10000
+#    accept-count: 2000
+#
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://192.168.100.202:59001/eureka/
+#
+#spring:
+#  # 数据库配置
+#  datasource:
+#    driver-class-name: dm.jdbc.driver.DmDriver
+#    url: jdbc:dm://192.168.99.36:5236
+#    username: NEWAPP
+#    password: cntrust123
+#    hikari:
+#      maximum-pool-size: 200
+#      connection-timeout: 30000
